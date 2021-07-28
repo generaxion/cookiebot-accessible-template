@@ -1,0 +1,41 @@
+/**
+ * Additional styling for declaration (embedded in website)
+ */
+
+.CookieDeclaration .CookieDeclarationType {
+  padding: 1rem;
+  overflow: auto;
+}
+
+.CookieDeclaration .CookieDeclarationTypeHeader {
+  margin-top: 0;
+}
+
+.CookieDeclaration .CookieDeclarationType p {
+  font-size: 1rem;
+}
+
+.CookieDeclaration .CookieDeclarationType td,
+.CookieDeclaration .CookieDeclarationType th {
+  font-size: 1rem;
+  line-height: 1.5;
+  padding: .5rem .25rem;
+}
+
+.CookieDeclaration .CookieDeclarationType p {
+  margin-bottom: 1rem;
+}
+
+.CookieDeclaration .CookieDeclarationTable {
+  overflow-x: auto;
+  table-layout: auto;
+}
+
+.CookieDeclaration .CookieDeclarationTable th,
+.CookieDeclaration .CookieDeclarationTable td {
+  min-width: 8rem;
+}
+
+.CookieDeclaration .CookieDeclarationTable tbody tr:last-of-type td {
+  border-bottom: 0;
+}
