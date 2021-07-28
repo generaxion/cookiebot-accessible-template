@@ -59,8 +59,8 @@ This is sort of general setup of Cookiebot. If you have setup Cookiebot before t
 ### 2.5 Embed Cookiebot to website
 
 1. If you are using WordPress, using [Cookiebot plugin](https://wordpress.org/plugins/cookiebot/) is recommended.
-2. Alternatively copy scripts from **My scripts** tab and follow instructions.
-3. Remember to add page to cookie declaration. For example add link to footer as "Manage cookies" and if you are using WordPress plugin, embed declaration with shortcode `[cookie_declaration]`. Otherwise use the declaration JS code from **My scripts** tab.
+2. Alternatively copy scripts from **Your scripts** tab and follow instructions.
+3. Remember to add page to cookie declaration. For example add link to footer as "Manage cookies" and if you are using WordPress plugin, embed declaration with shortcode `[cookie_declaration]`. Otherwise use the declaration JS code from **Your scripts** tab.
 4. For declaration styling, you might want to copy `src/declaration.css` to your site and enhance it as needed
 
 ## 3. How to modify?
