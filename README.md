@@ -40,8 +40,8 @@ This is sort of general setup of Cookiebot. If you have setup Cookiebot before t
 
 1. Go to **Dialog** tab
 2. Select template "Custom"
-3. Method "Explicit consent" (in EU)
-4. Copy & paste template files from this repository in `src/dialog-template.css`, `src/dialog-template.html` and `dialog-template.js` and edit (more on this later).
+3. Method "Explicit consent" (for EU cookie law)
+4. Copy & paste template files from this repository in `src/dialog-template.css`, `src/dialog-template.html` and `src/dialog-template.js` and edit (more on this later).
 5. Leave function names as is (Name of function to show banner `showCookieBanner` and Name of function to hide banner `hideCookieBanner`)
 6. Ignore logo & color as they don't appear in custom template
 
@@ -65,7 +65,7 @@ This is sort of general setup of Cookiebot. If you have setup Cookiebot before t
 
 ## 3. How to modify?
 
-### 3.2 Modify the source files in Cookiebot
+### 3.1 Modify the source files in Cookiebot
 
 In Cookiebot dialog editor you can change and save the code for HTML/CSS/JS files and they are automatically served via embed code. For HTML and JS related changes to banner, this is pretty much the only way to do it.
 
@@ -77,11 +77,16 @@ The styles rely on ID selectors which mean that overriding styles either need to
 
 As default styles often use `#CookieBanner` on selectors, the easy way to override is to chain two ID selectors as `#CookieBanner #CookieBannerNotice` like `#CookieBanner #CookieBannerNotice .cookiebanner__main`.
 
+### 3.3 Testing your cookie banner
+
+Notice that in Cookiebot settings you can preview your cookie dialog. With custom templates this is only partly helpful. Yes, you can see that your HTML and JS are functional but your styling will be incomplete as some of your websites styles will be inherited (mostly fonts). So best way to test the dialog is using development/staging site with domain alias in the **Domains** tab.
+
 ## 4. Why custom template?
 
-* Default templates have some issues with accessability
-* Default templates have very limited customizing abilities
-* Making custom cookie banner is pretty easy when you have good base template (like this)
+* Default templates have some issues with accessability.
+* Default templates have very limited customizing abilities.
+* Making custom cookie banner is pretty easy when you have good base template (like this).
+* You can integrate cookie banner seamlessly to site's look and feel.
 
 ## 5. Contributions
 
