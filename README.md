@@ -41,7 +41,7 @@ This is sort of general setup of Cookiebot. If you have setup Cookiebot before t
 1. Go to **Dialog** tab
 2. Select template "Custom"
 3. Method "Explicit consent" (for EU cookie law)
-4. Copy & paste template files from this repository in `src/dialog-template.css`, `src/dialog-template.html` and `src/dialog-template.js` and edit (more on this later).
+4. Copy & paste template files from this repository in `dialog-neutral/template.css`, `dialog-neutral/template.html` and `dialog-neutral/template.js` and edit (more on this later).
 5. Leave function names as is (Name of function to show banner `showCookieBanner` and Name of function to hide banner `hideCookieBanner`)
 6. Ignore logo & color as they don't appear in custom template
 
@@ -61,7 +61,7 @@ This is sort of general setup of Cookiebot. If you have setup Cookiebot before t
 1. If you are using WordPress, using [Cookiebot plugin](https://wordpress.org/plugins/cookiebot/) is recommended.
 2. Alternatively copy scripts from **Your scripts** tab and follow instructions.
 3. Remember to add page to cookie declaration. For example add link to footer as "Manage cookies" and if you are using WordPress plugin, embed declaration with shortcode `[cookie_declaration]`. Otherwise use the declaration JS code from **Your scripts** tab.
-4. For declaration styling, you might want to copy `src/declaration.css` to your site and enhance it as needed
+4. For declaration styling, you might want to copy `declaration/declaration.css` to your site and enhance it as needed
 
 ## 3. How to modify?
 
