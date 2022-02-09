@@ -1,0 +1,115 @@
+<div id="CookieBanner" data-version="1.1.0" data-template="generaxion/cookiebot-accessible-template" data-tone="neutral">
+  <div id="CookieBannerOverlay"></div>
+  <div id="CookieBannerNotice" lang="[#LANGUAGE#]" dir="[#TEXTDIRECTION#]" role="dialog" aria-labelledby="CookieBannerTitle" aria-describedby="CookieBannerDescription" ng-non-bindable>
+    <div class="cookiebanner__main">
+      <div class="cookiebanner__main__inner">
+        <div class="cookiebanner__main__content">
+          <p id="CookieBannerTitle" role="status" class="cookiebanner__main__title">[#TITLE#]</p>
+          <p id="CookieBannerDescription" class="cookiebanner__main__description">[#TEXT#]</p>
+        </div>
+        <div class="cookiebanner__buttons">
+          <ul>
+            <li><button class="cookiebanner__buttons__accept" id="CybotCookiebotDialogBodyLevelButtonLevelOptinAllowAll">[#ACCEPT#]</button></li>
+            <li><button class="cookiebanner__buttons__deny" id="CybotCookiebotDialogBodyButtonDecline">[#DECLINE#]</button></li>
+            <li><button class="cookiebanner__buttons__details" id="CustomCookiebotOpenDetails" onclick="eventCookieBannerDetailsClicked(event)" aria-expanded="false" aria-controls="CookieBannerDetails">[#DETAILS#]</button></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div id="CookieBannerDetails" class="cookiebanner__details">
+      <div class="cookiebanner__details__inner">
+        <div class="cookiebanner__details__preferences">
+          <fieldset class="cookiebanner__details__preferences__options">
+            <legend class="screen-reader-text">[#LEVELOPTIN_ALLOW_SELECTION#]</legend>
+            <div class="cookiebanner__preference">
+              <div class="cookiebanner__preference__heading">
+                <input type="checkbox" id="CybotCookiebotDialogBodyLevelButtonNecessary" checked="checked" disabled />
+                <label class="cookiebanner__preference__label" for="CybotCookiebotDialogBodyLevelButtonNecessary">
+                  <div class="cookiebanner__preference__ui" aria-hidden="true">
+                    <div class="cookiebanner__preference__ui__handle"></div>
+                  </div>
+                  <div class="cookiebanner__preference__text">
+                    <p aria-label="[#COOKIETYPE_NECESSARY_RAW#]" class="cookiebanner__preference__title">[#COOKIETYPE_NECESSARY#]</p>
+                  </div>
+                </label>
+                <button class="cookiebanner__preference__toggle" aria-expanded="false" aria-controls="CookieBannerMoreNecessary" onclick="eventCookieBannerToggleTable(event)">[#DETAILS#]<span class="screen-reader-text"> ([#COOKIETYPE_NECESSARY_RAW#])</span></button>
+              </div>
+              <div id="CookieBannerMoreNecessary"  class="cookiebanner__preference__more">
+                <p class="cookiebanner__preference__more__description">[#COOKIETYPEINTRO_NECESSARY#]</p>
+                <div class="cookiebanner__preference__more__list">
+                  [#COOKIETABLE_NECESSARY#]
+                </div>
+              </div>
+            </div>
+            <div class="cookiebanner__preference">
+              <div class="cookiebanner__preference__heading">
+                <input type="checkbox" id="CybotCookiebotDialogBodyLevelButtonPreferences" />
+                <label class="cookiebanner__preference__label" for="CybotCookiebotDialogBodyLevelButtonPreferences">
+                  <div class="cookiebanner__preference__ui" aria-hidden="true">
+                    <div class="cookiebanner__preference__ui__handle">
+                    </div>
+                  </div>
+                  <div class="cookiebanner__preference__text">
+                    <p aria-label="[#COOKIETYPE_PREFERENCE_RAW#]" class="cookiebanner__preference__title">[#COOKIETYPE_PREFERENCE#]</p>
+                  </div>
+                </label>
+                <button class="cookiebanner__preference__toggle" aria-expanded="false" aria-controls="CookieBannerMorePreference" onclick="eventCookieBannerToggleTable(event)">[#DETAILS#]<span class="screen-reader-text"> ([#COOKIETYPE_PREFERENCE_RAW#])</span></button>
+              </div>
+              <div id="CookieBannerMorePreference" class="cookiebanner__preference__more">
+                <p class="cookiebanner__preference__more__description">[#COOKIETYPEINTRO_PREFERENCE#]</p>
+                <div class="cookiebanner__preference__more__list">
+                  [#COOKIETABLE_PREFERENCE#]
+                </div>
+              </div>
+            </div>
+            <div class="cookiebanner__preference">
+              <div class="cookiebanner__preference__heading">
+                <input type="checkbox" id="CybotCookiebotDialogBodyLevelButtonStatistics" />
+                <label class="cookiebanner__preference__label" for="CybotCookiebotDialogBodyLevelButtonStatistics">
+                  <div class="cookiebanner__preference__ui" aria-hidden="true">
+                    <div class="cookiebanner__preference__ui__handle">
+                    </div>
+                  </div>
+                  <div class="cookiebanner__preference__text">
+                    <p aria-label="[#COOKIETYPE_STATISTICS_RAW#]" class="cookiebanner__preference__title">[#COOKIETYPE_STATISTICS#]</p>
+                  </div>
+                </label>
+                <button class="cookiebanner__preference__toggle" aria-expanded="false" aria-controls="CookieBannerMoreStatistics" onclick="eventCookieBannerToggleTable(event)">[#DETAILS#]<span class="screen-reader-text"> ([#COOKIETYPE_STATISTICS_RAW#])</span></button>
+              </div>
+              <div id="CookieBannerMoreStatistics" class="cookiebanner__preference__more">
+                <p class="cookiebanner__preference__more__description">[#COOKIETYPEINTRO_STATISTICS#]</p>
+                <div class="cookiebanner__preference__more__list">
+                  [#COOKIETABLE_STATISTICS#]
+                </div>
+              </div>
+            </div>
+            <div class="cookiebanner__preference">
+              <div class="cookiebanner__preference__heading">
+                <input type="checkbox" id="CybotCookiebotDialogBodyLevelButtonMarketing" />
+                <label class="cookiebanner__preference__label" for="CybotCookiebotDialogBodyLevelButtonMarketing">
+                  <div class="cookiebanner__preference__ui" aria-hidden="true">
+                    <div class="cookiebanner__preference__ui__handle">
+                    </div>
+                  </div>
+                  <div class="cookiebanner__preference__text">
+                    <p aria-label="[#COOKIETYPE_ADVERTISING_RAW#]" class="cookiebanner__preference__title">[#COOKIETYPE_ADVERTISING#]</p>
+                  </div>
+                </label>
+                <button class="cookiebanner__preference__toggle" aria-expanded="false" aria-controls="CookieBannerMoreAdvertising" onclick="eventCookieBannerToggleTable(event)">[#DETAILS#]<span class="screen-reader-text"> ([#COOKIETYPE_ADVERTISING_RAW#])</span></button>
+              </div>
+              <div id="CookieBannerMoreAdvertising" class="cookiebanner__preference__more">
+                <p class="cookiebanner__preference__more__description">[#COOKIETYPEINTRO_ADVERTISING#]</p>
+                <div class="cookiebanner__preference__more__list">
+                  [#COOKIETABLE_ADVERTISING#]
+                </div>
+              </div>
+            </div>
+          </fieldset>
+          <div class="cookiebanner__details__preferences__buttons">
+            <button id="CybotCookiebotDialogBodyLevelButtonLevelOptinAllowallSelection" class="cookiebanner__accept-selection">[#LEVELOPTIN_ALLOW_SELECTION#]</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
